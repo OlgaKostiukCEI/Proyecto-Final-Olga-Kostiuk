@@ -163,6 +163,15 @@ header {
         background-size: cover ;
     }
 }
+
+@media (max-width:350px) {
+    .banner__container__content p{
+        color:white;
+    }
+    .banner__container__content h4{
+        color:white;
+    }
+}
 /*--rbanner-*/
 .banner {
     background: url(../assets/foto-banner.png);
