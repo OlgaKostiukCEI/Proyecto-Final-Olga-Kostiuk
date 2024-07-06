@@ -172,7 +172,7 @@ header {
         color:white;
     }
 }
-/*--rbanner-*/
+/*--banner-*/
 .banner {
     background: url(../assets/foto-banner.png);
     background-repeat: no-repeat;
@@ -324,6 +324,8 @@ header {
     width: 5em;
     fill: #5F41BE;
 }
+
+/*--efecto hover-*/
 .section__iconos__iblock__icons__skills:hover {
     fill: #ffffff;
 }
@@ -393,6 +395,8 @@ section.experiencia {
     transition: transform 0.3s;
 }
 
+/*--efecto hover-*/
+
 .section__acordeon__bloque__h3:hover {
     cursor: pointer;
     transition: .4s ease;
@@ -408,14 +412,17 @@ section.experiencia {
 }
 
 .section__acordeon__bloque.active .section__acordeon__bloque__contenido{
-    height: 5em;
-   
+    height: 5em; 
 } 
+
+/*-responsive-*/
 @media (max-width:920px) {
     .section__acordeon__bloque.active .section__acordeon__bloque__contenido{
         height: 14em;
 }
 }
+
+
 /*--PROYECTOS GRID-*/
 
 /*--titulo de bloque proyectos-*/
@@ -447,7 +454,7 @@ section.experiencia {
     grid-auto-flow: dense;
     gap: 0.5em; 
 }
-
+/*--responsive grid-*/
 @media (max-width:908px) {
     .proyectos__grid {
         display: grid;
@@ -460,14 +467,23 @@ section.experiencia {
         grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
 }}
 
+@media (max-width:350px) {
+    .proyectos__grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+}}
+
+
 .proyectos__grid__block {
     width: 100%;;
 }
 
+/*-- img grande-*/
 .proyectos__grid__block--grande {
     grid-row: 1/3;
 }
 
+/*-- img grande-*/
 .proyectos__grid__block--grande--derecha {
     grid-row: 3/5;
     grid-column: 2 / 3;
@@ -484,8 +500,7 @@ section.experiencia {
 /*-BLOQUE DE LOGO-*/
 .section__logos {
     max-width: 1200px;
-    margin: 0 auto;
-    
+    margin: 0 auto;  
 }
 
 .section__logos__iblock {
