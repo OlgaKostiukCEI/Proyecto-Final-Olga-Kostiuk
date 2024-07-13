@@ -164,7 +164,7 @@ header {
     }
 }
 
-@media (max-width:400px) {
+@media (max-width:460px) {
     .banner__container__content p{
         color:white;
     }
